@@ -1,0 +1,15 @@
+keywords:
+  - token: "대외비"
+    weight: 1
+  - token: "기밀"
+    weight: 1
+  - token: "보안"
+    weight: 1
+  - token: "개인정보"
+    weight: 1
+  - token: "유출금지"
+    weight: 1
+
+scoring:
+  normalize_divisor: 10.0
+  threshold: 0.5

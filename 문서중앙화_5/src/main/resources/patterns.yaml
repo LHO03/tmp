@@ -1,0 +1,26 @@
+// (원본 정규식을 그대로 이전)
+patterns:
+  - name: SSN_PATTERN
+    regex: "\b\d{6}[- ]?\d{7}\b"
+    severity: high
+    tags: [pii, national-id]
+
+  - name: ACCOUNT_PATTERN
+    regex: "\b\d{3}[- ]?\d{2}[- ]?\d{5,6}\b"
+    severity: medium
+    tags: [financial, account]
+
+  - name: PHONE_PATTERN
+    regex: "\b010[- ]?\d{4}[- ]?\d{4}\b"
+    severity: medium
+    tags: [pii, phone]
+
+  - name: EMAIL_PATTERN
+    regex: "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"
+    severity: medium
+    tags: [pii, email]
+
+  - name: CREDIT_CARD_PATTERN
+    regex: "\b(?:(?:4\d{3})|(?:5[1-5]\d{2})|(?:6011)|(?:3[47]\d{2}))[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b"
+    severity: high
+    tags: [financial, card]
